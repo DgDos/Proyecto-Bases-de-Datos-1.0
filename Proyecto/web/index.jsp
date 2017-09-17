@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : Sep 12, 2017, 7:41:45 PM
-    Author     : FiJus
+    Author     : Oscar Romero, Brenda Mendez y Sara Chamseddine
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
