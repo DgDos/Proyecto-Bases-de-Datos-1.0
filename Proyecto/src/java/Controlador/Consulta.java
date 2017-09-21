@@ -16,9 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author FiJus
+ * @author LabingXEON
  */
-public class Finalizado extends HttpServlet {
+public class Consulta extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,13 +30,11 @@ public class Finalizado extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
-        String descripcion = request.getParameter("descripcion");
-        String hora = request.getParameter("hora");
-        String empresa = request.getParameter("empresa");
+            throws ServletException, IOException {
+        String hora=request.getParameter("hora");
         Empresa s=new Empresa();
-        String guardado=s.guardar(descripcion, hora, empresa);
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/trabajoRealizado.jsp");
+        String guardado="<h6>"+s.consulta(hora)+"</h6>";
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/consultaHorario.jsp");
         request.setAttribute("guardado", guardado);
         rd.forward(request, response);
     }

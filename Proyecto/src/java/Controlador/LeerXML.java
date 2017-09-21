@@ -37,7 +37,7 @@ public class LeerXML {
 		ArrayList<Ciudad> matrizCiudades = new ArrayList<>();
 
 		try {
-			File inputFile = new File("C:/Users/FiJus/Documents/TrabajosQuintoSemestre/NetBeansBasesDeDatos/Proyecto/src/java/Controlador/Cities.kml");
+			File inputFile = new File("C:\\Users\\LabingXEON\\Documents\\NetBeansProjects\\Proyecto-Bases-de-Datos-1.0\\Proyecto\\src\\java\\Controlador\\Cities.kml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(inputFile);

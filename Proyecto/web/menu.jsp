@@ -17,6 +17,7 @@
             <li><a href="iniciarChat.jsp">Iniciar Chat</a></li>
             <li><a href="mostrarEmpresas.jsp">Mostrar Empresas</a></li>
             <li><a href="trabajoRealizado.jsp">Trabajo Realizado</a></li>
+            <li><a href="consultaHorario.jsp">Consulta Horario</a></li>
         </ol>
     </body>
 </html>

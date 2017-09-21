@@ -12,6 +12,10 @@
         <servlet-name>Finalizado</servlet-name>
         <servlet-class>Controlador.Finalizado</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Consulta</servlet-name>
+        <servlet-class>Controlador.Consulta</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Inicio</servlet-name>
         <url-pattern>/Inicio</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>Finalizado</servlet-name>
         <url-pattern>/Finalizado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Consulta</servlet-name>
+        <url-pattern>/Consulta</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1,7 +1,7 @@
 <%-- 
-    Document   : trabajoRealizado
-    Created on : Sep 12, 2017, 7:50:28 PM
-    Author     : FiJus
+    Document   : consultaHorario
+    Created on : 21/09/2017, 10:08:22 AM
+    Author     : LabingXEON
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,11 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Notificacion de trabajo realizado</title>
+        <title>Consulta</title>
     </head>
-    
     <body>
-         <%
+        <h1>Coloca El Horario a Consultar</h1>
+        <%
         String respuesta = (String) request.getAttribute("guardado");
         if (respuesta != null && respuesta.length() > 0) {
         %>
@@ -21,11 +21,8 @@
         <%}%>
         <h1>Que trabajo quieres informar?</h1>
         
-        <form action="Finalizado" method="POST">
-            Trabajo realizado: <input type="text" name="descripcion"><br>
-            Hora finalizacion: <input type="text" name="hora"><br>
-            Empresa a la que se realiza: <input type="text" name="empresa">
-            
+        <form action="Consulta" method="POST">
+            Hora <input type="text" name="hora"><br>
             <input type="submit" name="Login"/>
 
         </form>
